@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #893930;
+        }
+
+        header {
+            background-color: #893930;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d0a933;
+            font-size: 42px;
+            margin-bottom: 5px;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #ff3131;
+            font-size: 42px;
+            margin-top: 5px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap; /* Adiciona quebra de linha para dispositivos menores */
+            padding: 20px;
+        }
+
+        .image-container.img1,
+        .image-container.img2 {
+            max-width: 100%; /* Altera para largura máxima de 100% */
+            max-height: 300px;
+            margin-bottom: 20px; /* Adiciona espaçamento entre as seções */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        section .text-container {
+            margin-left: 20px;
+            margin-right: 20px; /* Adiciona espaçamento à direita para dispositivos menores */
+            text-align: justify-all;
+            max-width: 100%; /* Altera para largura máxima de 100% */
+        }
+
+        .text-container p {
+            color: #fff;
+        }
+
+        .flex-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Adiciona uma media query para ajustes em telas menores */
+        @media screen and (max-width: 768px) {
+            section {
+                flex-direction: column; /* Muda para empilhamento em telas menores */
+            }
+        }
+    </style>
+    <title>HTML e CSS</title>
+</head>
+<body>
+    <header>
+        <h1>GOLD</h1>
+        <h2>BEFF</h2>
+    </header>
+
+    <section>
+        <div class="image-container img1">
+            <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9agEG0M4CFmBW38BLZaQ-dxF6ZTErtRWCA&usqp=CAU" alt="Imagem 1">
+        </div>
+
+        <div class="text-container">
+            <p>CORTES FRIOS, QUE IRÃO TE PROPORCIONAR UM MOMENTO AGRADÁVEL... COM SEUS FAMILIARES E AMIGOS</p>
+        </div>
+    </section>
+
+    <section class="flex-right">
+        <div class="image-container img2">
+            <img id="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZFOK8dp2xQZ6CzZALQrJULVLPFA68Zc6LTg&usqp=CAU" alt="Imagem 2">
+        </div>
+
+        <div class="text-container">
+            <p>SABOR INCOMPARÁVEL TE PROPORCIONANDO O MELHOR CHURRASCO JÁ DEGUSTADO </p>
+        </div>
+    </section>
+
+    <footer>
+        VENHA CONFERIR!!!
+    </footer>
+</body>
+</html>
